@@ -1,12 +1,77 @@
- cd . && /bin/bash /home/students/dotser02/NetBeansProjects/CoCo/missing automake-1.14 --foreign
-/home/students/dotser02/NetBeansProjects/CoCo/missing: line 81: automake-1.14: command not found
-WARNING: 'automake-1.14' is missing on your system.
-         You should only need it if you modified 'Makefile.am' or
-         'configure.ac' or m4 files included by 'configure.ac'.
-         The 'automake' program is part of the GNU Automake package:
-         <http://www.gnu.org/software/automake>
-         It also requires GNU Autoconf, GNU m4 and Perl in order to run:
-         <http://www.gnu.org/software/autoconf>
-         <http://www.gnu.org/software/m4/>
-         <http://www.perl.org/>
-make: *** [Makefile.in] Error 1
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.cpp
+mv -f .deps/main.Tpo .deps/main.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyAttr.o -MD -MP -MF .deps/PyAttr.Tpo -c -o PyAttr.o PyAttr.cpp
+mv -f .deps/PyAttr.Tpo .deps/PyAttr.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyBool.o -MD -MP -MF .deps/PyBool.Tpo -c -o PyBool.o PyBool.cpp
+mv -f .deps/PyBool.Tpo .deps/PyBool.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyBuiltInConcat.o -MD -MP -MF .deps/PyBuiltInConcat.Tpo -c -o PyBuiltInConcat.o PyBuiltInConcat.cpp
+mv -f .deps/PyBuiltInConcat.Tpo .deps/PyBuiltInConcat.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyBuiltInFPrint.o -MD -MP -MF .deps/PyBuiltInFPrint.Tpo -c -o PyBuiltInFPrint.o PyBuiltInFPrint.cpp
+mv -f .deps/PyBuiltInFPrint.Tpo .deps/PyBuiltInFPrint.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyBuiltInInput.o -MD -MP -MF .deps/PyBuiltInInput.Tpo -c -o PyBuiltInInput.o PyBuiltInInput.cpp
+mv -f .deps/PyBuiltInInput.Tpo .deps/PyBuiltInInput.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyBuiltInIter.o -MD -MP -MF .deps/PyBuiltInIter.Tpo -c -o PyBuiltInIter.o PyBuiltInIter.cpp
+mv -f .deps/PyBuiltInIter.Tpo .deps/PyBuiltInIter.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyBuiltInLen.o -MD -MP -MF .deps/PyBuiltInLen.Tpo -c -o PyBuiltInLen.o PyBuiltInLen.cpp
+mv -f .deps/PyBuiltInLen.Tpo .deps/PyBuiltInLen.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyBuiltInPrint.o -MD -MP -MF .deps/PyBuiltInPrint.Tpo -c -o PyBuiltInPrint.o PyBuiltInPrint.cpp
+mv -f .deps/PyBuiltInPrint.Tpo .deps/PyBuiltInPrint.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyBuiltInTPrint.o -MD -MP -MF .deps/PyBuiltInTPrint.Tpo -c -o PyBuiltInTPrint.o PyBuiltInTPrint.cpp
+mv -f .deps/PyBuiltInTPrint.Tpo .deps/PyBuiltInTPrint.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyByteCode.o -MD -MP -MF .deps/PyByteCode.Tpo -c -o PyByteCode.o PyByteCode.cpp
+mv -f .deps/PyByteCode.Tpo .deps/PyByteCode.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyCallable.o -MD -MP -MF .deps/PyCallable.Tpo -c -o PyCallable.o PyCallable.cpp
+mv -f .deps/PyCallable.Tpo .deps/PyCallable.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyCell.o -MD -MP -MF .deps/PyCell.Tpo -c -o PyCell.o PyCell.cpp
+mv -f .deps/PyCell.Tpo .deps/PyCell.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyCode.o -MD -MP -MF .deps/PyCode.Tpo -c -o PyCode.o PyCode.cpp
+mv -f .deps/PyCode.Tpo .deps/PyCode.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyException.o -MD -MP -MF .deps/PyException.Tpo -c -o PyException.o PyException.cpp
+mv -f .deps/PyException.Tpo .deps/PyException.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyExceptionType.o -MD -MP -MF .deps/PyExceptionType.Tpo -c -o PyExceptionType.o PyExceptionType.cpp
+mv -f .deps/PyExceptionType.Tpo .deps/PyExceptionType.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyFloat.o -MD -MP -MF .deps/PyFloat.Tpo -c -o PyFloat.o PyFloat.cpp
+mv -f .deps/PyFloat.Tpo .deps/PyFloat.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyFrame.o -MD -MP -MF .deps/PyFrame.Tpo -c -o PyFrame.o PyFrame.cpp
+mv -f .deps/PyFrame.Tpo .deps/PyFrame.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyFunction.o -MD -MP -MF .deps/PyFunction.Tpo -c -o PyFunction.o PyFunction.cpp
+mv -f .deps/PyFunction.Tpo .deps/PyFunction.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyFunList.o -MD -MP -MF .deps/PyFunList.Tpo -c -o PyFunList.o PyFunList.cpp
+mv -f .deps/PyFunList.Tpo .deps/PyFunList.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyFunListIterator.o -MD -MP -MF .deps/PyFunListIterator.Tpo -c -o PyFunListIterator.o PyFunListIterator.cpp
+mv -f .deps/PyFunListIterator.Tpo .deps/PyFunListIterator.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyInt.o -MD -MP -MF .deps/PyInt.Tpo -c -o PyInt.o PyInt.cpp
+mv -f .deps/PyInt.Tpo .deps/PyInt.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyList.o -MD -MP -MF .deps/PyList.Tpo -c -o PyList.o PyList.cpp
+mv -f .deps/PyList.Tpo .deps/PyList.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyListIterator.o -MD -MP -MF .deps/PyListIterator.Tpo -c -o PyListIterator.o PyListIterator.cpp
+mv -f .deps/PyListIterator.Tpo .deps/PyListIterator.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyNone.o -MD -MP -MF .deps/PyNone.Tpo -c -o PyNone.o PyNone.cpp
+mv -f .deps/PyNone.Tpo .deps/PyNone.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyObject.o -MD -MP -MF .deps/PyObject.Tpo -c -o PyObject.o PyObject.cpp
+mv -f .deps/PyObject.Tpo .deps/PyObject.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyParser.o -MD -MP -MF .deps/PyParser.Tpo -c -o PyParser.o PyParser.cpp
+mv -f .deps/PyParser.Tpo .deps/PyParser.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyRange.o -MD -MP -MF .deps/PyRange.Tpo -c -o PyRange.o PyRange.cpp
+mv -f .deps/PyRange.Tpo .deps/PyRange.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyRangeIterator.o -MD -MP -MF .deps/PyRangeIterator.Tpo -c -o PyRangeIterator.o PyRangeIterator.cpp
+mv -f .deps/PyRangeIterator.Tpo .deps/PyRangeIterator.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyRangeType.o -MD -MP -MF .deps/PyRangeType.Tpo -c -o PyRangeType.o PyRangeType.cpp
+mv -f .deps/PyRangeType.Tpo .deps/PyRangeType.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyScanner.o -MD -MP -MF .deps/PyScanner.Tpo -c -o PyScanner.o PyScanner.cpp
+mv -f .deps/PyScanner.Tpo .deps/PyScanner.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyStr.o -MD -MP -MF .deps/PyStr.Tpo -c -o PyStr.o PyStr.cpp
+mv -f .deps/PyStr.Tpo .deps/PyStr.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyStrIterator.o -MD -MP -MF .deps/PyStrIterator.Tpo -c -o PyStrIterator.o PyStrIterator.cpp
+mv -f .deps/PyStrIterator.Tpo .deps/PyStrIterator.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyToken.o -MD -MP -MF .deps/PyToken.Tpo -c -o PyToken.o PyToken.cpp
+mv -f .deps/PyToken.Tpo .deps/PyToken.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyTuple.o -MD -MP -MF .deps/PyTuple.Tpo -c -o PyTuple.o PyTuple.cpp
+mv -f .deps/PyTuple.Tpo .deps/PyTuple.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyTupleIterator.o -MD -MP -MF .deps/PyTupleIterator.Tpo -c -o PyTupleIterator.o PyTupleIterator.cpp
+mv -f .deps/PyTupleIterator.Tpo .deps/PyTupleIterator.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyType.o -MD -MP -MF .deps/PyType.Tpo -c -o PyType.o PyType.cpp
+mv -f .deps/PyType.Tpo .deps/PyType.Po
+/usr/bin/g++ -DPACKAGE_NAME=\"coco\" -DPACKAGE_TARNAME=\"coco\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"coco\ 1.0\" -DPACKAGE_BUGREPORT=\"kentdlee@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"coco\" -DVERSION=\"1.0\" -I.     -std=c++0x -MT PyUtil.o -MD -MP -MF .deps/PyUtil.Tpo -c -o PyUtil.o PyUtil.cpp
+mv -f .deps/PyUtil.Tpo .deps/PyUtil.Po
+/usr/bin/g++  -std=c++0x   -o coco main.o PyAttr.o PyBool.o PyBuiltInConcat.o PyBuiltInFPrint.o PyBuiltInInput.o PyBuiltInIter.o PyBuiltInLen.o PyBuiltInPrint.o PyBuiltInTPrint.o PyByteCode.o PyCallable.o PyCell.o PyCode.o PyException.o PyExceptionType.o PyFloat.o PyFrame.o PyFunction.o PyFunList.o PyFunListIterator.o PyInt.o PyList.o PyListIterator.o PyNone.o PyObject.o PyParser.o PyRange.o PyRangeIterator.o PyRangeType.o PyScanner.o PyStr.o PyStrIterator.o PyToken.o PyTuple.o PyTupleIterator.o PyType.o PyUtil.o  

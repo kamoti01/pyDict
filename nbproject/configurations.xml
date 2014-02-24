@@ -68,158 +68,173 @@
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
-          <executablePath></executablePath>
+          <executablePath>coco</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>.</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>PACKAGE="coco"</Elem>
+              <Elem>PACKAGE_BUGREPORT="kentdlee@gmail.com"</Elem>
+              <Elem>PACKAGE_NAME="coco"</Elem>
+              <Elem>PACKAGE_STRING="coco 1.0"</Elem>
+              <Elem>PACKAGE_TARNAME="coco"</Elem>
+              <Elem>PACKAGE_URL=""</Elem>
+              <Elem>PACKAGE_VERSION="1.0"</Elem>
+              <Elem>VERSION="1.0"</Elem>
+            </preprocessorList>
+          </ccTool>
         </makeTool>
       </makefileType>
-      <item path="PyAttr.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyAttr.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyBool.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyBool.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyBuiltInConcat.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyBuiltInConcat.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyBuiltInFPrint.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyBuiltInFPrint.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyBuiltInInput.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyBuiltInInput.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyBuiltInIter.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyBuiltInIter.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyBuiltInLen.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyBuiltInLen.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyBuiltInPrint.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyBuiltInPrint.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyBuiltInTPrint.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyBuiltInTPrint.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyByteCode.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyByteCode.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyCallable.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyCallable.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyCell.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyCell.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyCode.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyCode.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyException.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyException.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyExceptionType.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyExceptionType.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyFloat.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyFloat.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyFrame.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyFrame.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyFunList.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyFunList.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyFunListIterator.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyFunListIterator.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyFunction.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyFunction.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyInt.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyInt.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyList.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyList.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyListIterator.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyListIterator.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyNone.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyNone.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyObject.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyObject.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyParser.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyParser.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyRange.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyRange.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyRangeIterator.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyRangeIterator.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyRangeType.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyRangeType.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyScanner.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyScanner.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyStr.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyStr.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyStrIterator.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyStrIterator.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyToken.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyToken.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyTuple.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyTuple.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyTupleIterator.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyTupleIterator.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyType.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyType.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="PyUtil.cpp" ex="false" tool="1" flavor2="4">
+      <item path="PyUtil.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="4">
+      <item path="main.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
       </item>

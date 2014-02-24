@@ -1,4 +1,4 @@
-/* Current User: Erik Dotseth
+/* Current User/Co-Author: Erik Dotseth
  * 
  * File:   main.cpp
  * Author: Kent D. Lee
