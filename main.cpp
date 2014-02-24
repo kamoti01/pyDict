@@ -1,4 +1,5 @@
-/* 
+/* Current User: Erik Dotseth
+ * 
  * File:   main.cpp
  * Author: Kent D. Lee
  * (c) 2013
