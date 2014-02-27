@@ -23,6 +23,7 @@
 #include "PyBool.h"
 #include "PyException.h"
 #include <sstream>
+#include <math.h>
 using namespace std;
 
 PyFloat::PyFloat(double f) : PyObject() {
@@ -31,6 +32,8 @@ PyFloat::PyFloat(double f) : PyObject() {
     dict["__float__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyFloat::__float__);
     dict["__int__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyFloat::__int__);
     dict["__bool__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyFloat::__bool__);
+    dict["__floordiv__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyFloat::__floordiv__);
+    dict["__truediv__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyFloat::__truediv__);
 }
 
 PyFloat::PyFloat(const PyFloat& orig) : PyFloat(orig.val) {
@@ -103,4 +106,64 @@ PyObject* PyFloat::__bool__(vector<PyObject*>* args) {
         return new PyBool(false);
     
     return new PyBool(true);
+}
+PyObject* PyFloat::__truediv__(vector<PyObject*>* args) {
+    PyInt* x;
+    PyFloat* y;
+    ostringstream msg;
+
+    if (args->size() != 1) {
+        msg << "TypeError: expected 1 arguments, got " << args->size();
+        throw new PyException(PYWRONGARGCOUNTEXCEPTION,msg.str());  
+    }
+    
+    PyObject* arg = (*args)[0];
+
+    switch (arg->getType()->typeId()) {
+        case PyIntType:
+            x = (PyInt*) arg;
+            if (x->getVal() == 0)
+                throw new PyException(PYILLEGALOPERATIONEXCEPTION, "ZeroDivisionError: integer division or modulo by zero");
+            return new PyFloat(this->val / x->getVal());
+
+        case PyFloatType:
+            y = (PyFloat*) arg;
+            if (y->getVal() == 0)
+                throw new PyException(PYILLEGALOPERATIONEXCEPTION, "ZeroDivisionError: integer division or modulo by zero");
+            return new PyFloat(this->val / y->getVal());
+
+        default:
+            throw new PyException(PYILLEGALOPERATIONEXCEPTION, "Invalid types for *: int and " + arg->getType()->toString());
+    }
+}
+
+PyObject* PyFloat::__floordiv__(vector<PyObject*>* args) {
+    PyInt* x;
+    PyFloat* y;
+    ostringstream msg;
+
+    if (args->size() != 1) {
+        msg << "TypeError: expected 1 arguments, got " << args->size();
+        throw new PyException(PYWRONGARGCOUNTEXCEPTION,msg.str());  
+    }
+    
+    PyObject* arg = (*args)[0];
+
+    switch (arg->getType()->typeId()) {
+        case PyIntType:
+            x = (PyInt*) arg;
+            if (x->getVal() == 0)
+                throw new PyException(PYILLEGALOPERATIONEXCEPTION, "ZeroDivisionError: integer division or modulo by zero");
+            return new PyFloat(this->val / x->getVal());
+
+        case PyFloatType:
+            y = (PyFloat*) arg;
+            if (y->getVal() == 0)
+                throw new PyException(PYILLEGALOPERATIONEXCEPTION, "ZeroDivisionError: integer division or modulo by zero");
+
+            return new PyFloat(floor(this->val / y->getVal()));
+
+        default:
+            throw new PyException(PYILLEGALOPERATIONEXCEPTION, "Invalid types for *: int and " + arg->getType()->toString());
+    }
 }
