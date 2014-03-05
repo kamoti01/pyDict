@@ -24,6 +24,7 @@
 #include "PyException.h"
 #include <sstream>
 #include <math.h>
+#include <stdio.h>
 using namespace std;
 
 PyFloat::PyFloat(double f) : PyObject() {
@@ -43,8 +44,11 @@ PyFloat::~PyFloat() {
 }
 
 string PyFloat::toString() {
+    char buffer[50];
+    sprintf(buffer, "%1.1f",val);
+    
     stringstream ss;
-    ss << val;
+    ss << buffer;
     return ss.str();
 }
 
