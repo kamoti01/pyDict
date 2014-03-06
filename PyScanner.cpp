@@ -161,11 +161,13 @@ PyToken* PyScanner::getToken() {
                         type = PYBADTOKEN;
                     }
                         
-                    else if (c == '\\'){
+                    
+                            
+                } 
+                else if (c == '\\'){
                         state = 13;
                     }
-                            
-                } else {
+                else {
                     if (in->eof()) {
                         type = PYBADTOKEN;
                         foundOne = true;
@@ -213,6 +215,7 @@ PyToken* PyScanner::getToken() {
                     type = PYBADTOKEN;
                     foundOne = true;                    
                 }
+                break;
             case 12: 
                 // Comments extend to end of line and
                 // begin with a semicolon.
@@ -222,6 +225,7 @@ PyToken* PyScanner::getToken() {
                     state = 0;
                     lex = "";
                 }
+                break;
             case 13:
                 //Single quote within Single quote string
                 state = 6;
