@@ -160,7 +160,11 @@ PyToken* PyScanner::getToken() {
                     if (in->eof()) {
                         type = PYBADTOKEN;
                     }
-
+                        
+                    else if (c == '\\'){
+                        state = 13;
+                    }
+                            
                 } else {
                     if (in->eof()) {
                         type = PYBADTOKEN;
@@ -179,7 +183,11 @@ PyToken* PyScanner::getToken() {
                     c = in->get();
                     foundOne = true;
 
-                } else {
+                }
+                else if (c == '\\'){
+                        state = 14;
+                    }
+                else {
                     if (in->eof()) {
                         type = PYBADTOKEN;
                         foundOne = true;
@@ -214,6 +222,13 @@ PyToken* PyScanner::getToken() {
                     state = 0;
                     lex = "";
                 }
+            case 13:
+                //Single quote within Single quote string
+                state = 6;
+                break;
+            case 14:
+                state = 7;
+                break;
         }
 
         if (!foundOne) {
