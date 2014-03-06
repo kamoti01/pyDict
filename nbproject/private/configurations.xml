@@ -5,6 +5,8 @@
       <df name="autom4te.cache">
       </df>
       <df name="tests">
+        <df name="__pycache__">
+        </df>
       </df>
       <in>PyAttr.cpp</in>
       <in>PyAttr.h</in>

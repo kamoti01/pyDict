@@ -148,6 +148,7 @@ PyToken* PyScanner::getToken() {
                 }
                 break;
             case 6:
+                
                 if (c == SINGLE_QUOTE) {
                     type = PYSTRINGTOKEN;
 
@@ -236,8 +237,13 @@ PyToken* PyScanner::getToken() {
         }
 
         if (!foundOne) {
+            if (state == 13 || state ==14){
+                c = in->get();
+            }
+            else{
             lex = lex + c;
             c = in->get();
+            }
         }
     }
 

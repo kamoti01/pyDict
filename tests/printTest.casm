@@ -1,5 +1,5 @@
 Function: main/0
-Constants: None, "Test Something: "
+Constants: None, "Test Somethin\"g: "
 Locals: x
 Globals: input, print
 BEGIN
