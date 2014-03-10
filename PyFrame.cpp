@@ -610,6 +610,24 @@ PyObject* PyFrame::execute() {
                     //variable found at index operand.
                     delete locals[code.getLocals()[operand]];
                     break;
+                    
+                    //Copied BUILD_LIST, and modified names
+                    //Do I need to implement a dictionary in C++?
+                    //I believe yes, so this is wrong right now.
+                case BUILD_MAP:
+                    args = new vector<PyObject*>();
+                    for (int i = 0; i < operand; i++) {
+                        u = safetyPop();
+                        it = args->begin();
+                        args->insert(it, u);
+                    }
+
+                    opStack->push(new PyDict(args));
+                    break;
+                    
+                case STORE_MAP:
+                    
+                    break;
 
                 default:
                     throw new PyException(PYILLEGALOPERATIONEXCEPTION, "Unimplemented instruction: " + inst->getOpCodeName());

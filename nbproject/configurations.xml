@@ -15,6 +15,10 @@
       <in>PyCallable.cpp</in>
       <in>PyCell.cpp</in>
       <in>PyCode.cpp</in>
+      <in>PyDict.cpp</in>
+      <in>PyDict.h</in>
+      <in>PyDictIterator.cpp</in>
+      <in>PyDictIterator.h</in>
       <in>PyException.cpp</in>
       <in>PyExceptionType.cpp</in>
       <in>PyFloat.cpp</in>
@@ -137,6 +141,14 @@
       <item path="PyCode.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>
         </ccTool>
+      </item>
+      <item path="PyDict.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PyDict.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PyDictIterator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PyDictIterator.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PyException.cpp" ex="false" tool="1" flavor2="8">
         <ccTool>

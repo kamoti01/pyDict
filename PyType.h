@@ -50,7 +50,9 @@ enum PyTypeId {
     PyTupleType,
     PyTupleIteratorType,
     PyCellType,
-    PyExceptionTypeId           
+    PyExceptionTypeId,
+    PyDictType,
+    PyDictKeyIteratorType
 };
 
 class PyType : public PyCallable {
@@ -61,11 +63,11 @@ public:
     PyType* getType();
     PyTypeId typeId();
     string callName();
-   
+
 protected:
     string typeString;
     PyTypeId index;
-    
+
     virtual PyObject* __call__(vector<PyObject*>* args);
     virtual PyObject* __str__(vector<PyObject*>* args);
     virtual PyObject* __type__(vector<PyObject*>* args);

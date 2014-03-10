@@ -34,6 +34,10 @@
       <in>PyCell.h</in>
       <in>PyCode.cpp</in>
       <in>PyCode.h</in>
+      <in>PyDict.cpp</in>
+      <in>PyDict.h</in>
+      <in>PyDictIterator.cpp</in>
+      <in>PyDictIterator.h</in>
       <in>PyException.cpp</in>
       <in>PyException.h</in>
       <in>PyExceptionType.cpp</in>
