@@ -60,6 +60,8 @@ PyObject* PyObject::callMethod(string name, vector<PyObject*>* args) {
 PyObject::PyObject() {
     dict["__str__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyObject::__str__);
     dict["__type__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyObject::__type__);
+    dict["__hash__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyObject::__hash__);
+
 }
 
 PyObject::~PyObject() {
@@ -83,6 +85,12 @@ void PyObject::decRef() {
 
 int PyObject::getRefCount() const {
     return refCount;
+}
+
+PyObject* PyObject::__hash__(vector<PyObject*>* args){
+    
+    throw new PyException(PYILLEGALOPERATIONEXCEPTION,
+            "TypeError: unhashable type: '"+this->getType()->toString()+ "'"); 
 }
 
 PyObject* PyObject::__str__(vector<PyObject*>* args) {

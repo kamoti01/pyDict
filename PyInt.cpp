@@ -42,6 +42,9 @@ PyInt::PyInt(int val): PyObject() {
     dict["__float__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyInt::__float__);
     dict["__int__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyInt::__int__);
     dict["__bool__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyInt::__bool__);
+    
+    //dict["__hash__"] = (PyObject* (PyObject::*)(vector<PyObject*>*)) (&PyInt::__hash__);
+    //Don't need because its in PyObject
 }
 
 PyInt::PyInt(const PyInt& orig) : PyInt(orig.val) {
@@ -83,6 +86,10 @@ PyObject* PyInt::__add__(vector<PyObject*>* args) {
         default:
             throw new PyException(PYILLEGALOPERATIONEXCEPTION, "Invalid types for +: int and " + arg->getType()->toString());
     }
+}
+
+PyObject* PyInt::__hash__(vector<PyObject*>* args) {
+    return new PyInt(abs(this->getVal()));
 }
 
 PyObject* PyInt::__sub__(vector<PyObject*>* args) {

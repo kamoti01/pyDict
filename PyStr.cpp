@@ -65,6 +65,11 @@ PyObject* PyStr::__str__(vector<PyObject*>* args) {
     return this;
 }
 
+std::hash<std::string> hash_string;
+PyObject* PyStr::__hash__(vector<PyObject*>* args) {
+    return new PyInt(hash_string(this->val));
+}
+
 PyObject* PyStr::__float__(vector<PyObject*>* args) {
     ostringstream msg; 
 

@@ -43,6 +43,13 @@ PyFloat::PyFloat(const PyFloat& orig) : PyFloat(orig.val) {
 PyFloat::~PyFloat() {
 }
 
+PyObject* PyFloat::__hash__(vector<PyObject*>* args) {
+    
+    int i = (floor(this->val));
+    i = abs(i);
+    return new PyInt(i);
+}
+
 string PyFloat::toString() {
     char buffer[50];
     sprintf(buffer, "%1.1f",val);

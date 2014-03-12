@@ -46,6 +46,12 @@ PyBool::PyBool(const PyBool& orig) : PyBool() {
 PyBool::~PyBool() {
 }
 
+PyObject* PyBool::__hash__(vector<PyObject*>* args) {
+    if (val)
+        return new PyInt(1);
+    return new PyInt(0);
+}
+
 string PyBool::toString() {
     if (val)
         return "True";

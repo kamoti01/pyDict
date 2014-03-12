@@ -63,7 +63,8 @@ protected:
     int refCount;
     
     virtual PyObject* __str__(vector<PyObject*>* args);
-    virtual PyObject* __type__(vector<PyObject*>* args);     
+    virtual PyObject* __type__(vector<PyObject*>* args);  
+    virtual PyObject* __hash__(vector<PyObject*>* args);
 };
 
 ostream& operator << (ostream& os, PyObject& t);

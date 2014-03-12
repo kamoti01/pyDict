@@ -98,6 +98,7 @@ am_coco_OBJECTS = main.$(OBJEXT) PyAttr.$(OBJEXT) PyBool.$(OBJEXT) \
 	PyBuiltInLen.$(OBJEXT) PyBuiltInPrint.$(OBJEXT) \
 	PyBuiltInTPrint.$(OBJEXT) PyByteCode.$(OBJEXT) \
 	PyCallable.$(OBJEXT) PyCell.$(OBJEXT) PyCode.$(OBJEXT) \
+	PyDict.$(OBJEXT) PyDictIterator.$(OBJEXT) \
 	PyException.$(OBJEXT) PyExceptionType.$(OBJEXT) \
 	PyFloat.$(OBJEXT) PyFrame.$(OBJEXT) PyFunction.$(OBJEXT) \
 	PyFunList.$(OBJEXT) PyFunListIterator.$(OBJEXT) \
@@ -191,7 +192,7 @@ AUTOHEADER = ${SHELL} /home/students/dotser02/NetBeansProjects/CoCo/missing auto
 AUTOMAKE = ${SHELL} /home/students/dotser02/NetBeansProjects/CoCo/missing automake-1.13
 AWK = mawk
 CPPFLAGS = 
-CXX = /usr/bin/g++
+CXX = g++
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS =  -std=c++0x
 CYGPATH_W = echo
@@ -229,7 +230,7 @@ abs_builddir = /home/students/dotser02/NetBeansProjects/CoCo
 abs_srcdir = /home/students/dotser02/NetBeansProjects/CoCo
 abs_top_builddir = /home/students/dotser02/NetBeansProjects/CoCo
 abs_top_srcdir = /home/students/dotser02/NetBeansProjects/CoCo
-ac_ct_CXX = 
+ac_ct_CXX = g++
 am__include = include
 am__leading_dot = .
 am__quote = 
@@ -267,7 +268,7 @@ target_alias =
 top_build_prefix = 
 top_builddir = .
 top_srcdir = .
-coco_SOURCES = main.cpp PyAttr.cpp PyBool.cpp PyBuiltInConcat.cpp PyBuiltInFPrint.cpp PyBuiltInInput.cpp PyBuiltInIter.cpp PyBuiltInLen.cpp PyBuiltInPrint.cpp PyBuiltInTPrint.cpp PyByteCode.cpp PyCallable.cpp PyCell.cpp PyCode.cpp PyException.cpp PyExceptionType.cpp PyFloat.cpp PyFrame.cpp PyFunction.cpp PyFunList.cpp PyFunListIterator.cpp PyInt.cpp PyList.cpp PyListIterator.cpp PyNone.cpp PyObject.cpp PyParser.cpp PyRange.cpp PyRangeIterator.cpp PyRangeType.cpp PyScanner.cpp PyStr.cpp PyStrIterator.cpp PyToken.cpp PyTuple.cpp PyTupleIterator.cpp PyType.cpp PyUtil.cpp
+coco_SOURCES = main.cpp PyAttr.cpp PyBool.cpp PyBuiltInConcat.cpp PyBuiltInFPrint.cpp PyBuiltInInput.cpp PyBuiltInIter.cpp PyBuiltInLen.cpp PyBuiltInPrint.cpp PyBuiltInTPrint.cpp PyByteCode.cpp PyCallable.cpp PyCell.cpp PyCode.cpp PyDict.cpp PyDictIterator.cpp PyException.cpp PyExceptionType.cpp PyFloat.cpp PyFrame.cpp PyFunction.cpp PyFunList.cpp PyFunListIterator.cpp PyInt.cpp PyList.cpp PyListIterator.cpp PyNone.cpp PyObject.cpp PyParser.cpp PyRange.cpp PyRangeIterator.cpp PyRangeType.cpp PyScanner.cpp PyStr.cpp PyStrIterator.cpp PyToken.cpp PyTuple.cpp PyTupleIterator.cpp PyType.cpp PyUtil.cpp
 all: all-am
 
 .SUFFIXES:
@@ -372,6 +373,8 @@ include ./$(DEPDIR)/PyByteCode.Po
 include ./$(DEPDIR)/PyCallable.Po
 include ./$(DEPDIR)/PyCell.Po
 include ./$(DEPDIR)/PyCode.Po
+include ./$(DEPDIR)/PyDict.Po
+include ./$(DEPDIR)/PyDictIterator.Po
 include ./$(DEPDIR)/PyException.Po
 include ./$(DEPDIR)/PyExceptionType.Po
 include ./$(DEPDIR)/PyFloat.Po

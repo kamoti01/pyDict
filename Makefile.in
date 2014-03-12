@@ -98,6 +98,7 @@ am_coco_OBJECTS = main.$(OBJEXT) PyAttr.$(OBJEXT) PyBool.$(OBJEXT) \
 	PyBuiltInLen.$(OBJEXT) PyBuiltInPrint.$(OBJEXT) \
 	PyBuiltInTPrint.$(OBJEXT) PyByteCode.$(OBJEXT) \
 	PyCallable.$(OBJEXT) PyCell.$(OBJEXT) PyCode.$(OBJEXT) \
+	PyDict.$(OBJEXT) PyDictIterator.$(OBJEXT) \
 	PyException.$(OBJEXT) PyExceptionType.$(OBJEXT) \
 	PyFloat.$(OBJEXT) PyFrame.$(OBJEXT) PyFunction.$(OBJEXT) \
 	PyFunList.$(OBJEXT) PyFunListIterator.$(OBJEXT) \
@@ -267,7 +268,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-coco_SOURCES = main.cpp PyAttr.cpp PyBool.cpp PyBuiltInConcat.cpp PyBuiltInFPrint.cpp PyBuiltInInput.cpp PyBuiltInIter.cpp PyBuiltInLen.cpp PyBuiltInPrint.cpp PyBuiltInTPrint.cpp PyByteCode.cpp PyCallable.cpp PyCell.cpp PyCode.cpp PyException.cpp PyExceptionType.cpp PyFloat.cpp PyFrame.cpp PyFunction.cpp PyFunList.cpp PyFunListIterator.cpp PyInt.cpp PyList.cpp PyListIterator.cpp PyNone.cpp PyObject.cpp PyParser.cpp PyRange.cpp PyRangeIterator.cpp PyRangeType.cpp PyScanner.cpp PyStr.cpp PyStrIterator.cpp PyToken.cpp PyTuple.cpp PyTupleIterator.cpp PyType.cpp PyUtil.cpp
+coco_SOURCES = main.cpp PyAttr.cpp PyBool.cpp PyBuiltInConcat.cpp PyBuiltInFPrint.cpp PyBuiltInInput.cpp PyBuiltInIter.cpp PyBuiltInLen.cpp PyBuiltInPrint.cpp PyBuiltInTPrint.cpp PyByteCode.cpp PyCallable.cpp PyCell.cpp PyCode.cpp PyDict.cpp PyDictIterator.cpp PyException.cpp PyExceptionType.cpp PyFloat.cpp PyFrame.cpp PyFunction.cpp PyFunList.cpp PyFunListIterator.cpp PyInt.cpp PyList.cpp PyListIterator.cpp PyNone.cpp PyObject.cpp PyParser.cpp PyRange.cpp PyRangeIterator.cpp PyRangeType.cpp PyScanner.cpp PyStr.cpp PyStrIterator.cpp PyToken.cpp PyTuple.cpp PyTupleIterator.cpp PyType.cpp PyUtil.cpp
 all: all-am
 
 .SUFFIXES:
@@ -372,6 +373,8 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PyCallable.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PyCell.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PyCode.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PyDict.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PyDictIterator.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PyException.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PyExceptionType.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PyFloat.Po@am__quote@

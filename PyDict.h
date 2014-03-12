@@ -35,6 +35,8 @@ public:
     string toString();
     PyObject* getVal(PyObject* key);
     void setVal(PyObject* key, PyObject* val);
+    
+    //Might not need getMap(), forgot we were passing a map already
 protected:
     unordered_map<PyObject*,PyObject*,PyHash,PyKeysEqual> map;
     virtual PyObject* __getitem__(vector<PyObject*>* args);

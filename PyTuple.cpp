@@ -22,6 +22,7 @@
 #include "PyInt.h"
 #include "PyType.h"
 #include <sstream>
+#include <iostream>
 using namespace std;
 
 PyTuple::PyTuple(vector<PyObject*>* lst) : PyObject() {
@@ -42,6 +43,14 @@ PyType* PyTuple::getType() {
 int PyTuple::size() {
     return data.size();
 }
+
+/*
+PyObject* PyInt::__hash__(vector<PyObject*>* args) {
+    
+    int total = 0;
+    total = this->getVal(0) + this->getVal(1);
+    return new PyInt(total);
+}*/
 
 string PyTuple::toString() {
     ostringstream s;

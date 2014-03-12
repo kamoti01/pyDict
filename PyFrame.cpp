@@ -28,6 +28,7 @@
 #include "PyFunList.h"
 #include "PyInt.h"
 #include "PyNone.h"
+#include "PyDict.h"
 #include <iostream>
 using namespace std;
 
@@ -137,6 +138,9 @@ PyObject* PyFrame::execute() {
     vector<PyObject*>* args;
     vector<PyObject*>::iterator it;
     string name;
+    
+    PyDict* d;
+    //Created for store map and build map
 
     //This registers the frame for the signal handler in case a signal occurs.
     pushFrame(this);
@@ -615,19 +619,28 @@ PyObject* PyFrame::execute() {
                     //Do I need to implement a dictionary in C++?
                     //I believe yes, so this is wrong right now.
                 case BUILD_MAP:
-                    args = new vector<PyObject*>();
-                    for (int i = 0; i < operand; i++) {
-                        u = safetyPop();
-                        it = args->begin();
-                        args->insert(it, u);
-                    }
+                    //We aren't passing anything into the dict yet.  Only building the dictionary.
+                    //opStack->push(new PyDict());
+                    d = new PyDict();
+                    opStack->push(d);
 
-                    opStack->push(new PyDict(args));
                     break;
                     
                 case STORE_MAP:
+                    u = safetyPop();
+                    v = safetyPop();
+                    w = safetyPop();
+                    args = new vector<PyObject*>();
+                    args->push_back(u); // the index
+                    args->push_back(v); // the item
                     
+                    v = w->callMethod("__setitem__", args); // None is returned
+                    opStack->push(w);
+                    delete v;
+                    delete args;
                     break;
+                    
+                //A PyDict d has been created up at the top of this function.
 
                 default:
                     throw new PyException(PYILLEGALOPERATIONEXCEPTION, "Unimplemented instruction: " + inst->getOpCodeName());

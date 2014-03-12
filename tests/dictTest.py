@@ -19,9 +19,9 @@ def main():
     print(key, d[key])
   print(type(d))
   print(type(type(d)))
-#main()
+main()
 
-disassemble(main)
+#disassemble(main)
 
 #Going to have to create two new classes
 #4 files total, .h and .cpp

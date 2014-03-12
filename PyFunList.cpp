@@ -24,6 +24,7 @@
 #include "PyStack.h"
 #include "PyStr.h"
 #include <sstream>
+#include <climits>
 using namespace std;
 
 PyFunListElm::PyFunListElm(PyObject* head, PyFunListElm* tail) {
@@ -138,6 +139,20 @@ string PyFunList::toString() {
     s << "]";
     
     return s.str();
+}
+
+PyObject* PyFunList::__hash__(vector<PyObject*>* args) {
+    PyFunListElm* current = data;
+    int total = 0;
+    int val;
+
+    
+    while (current != NULL) {
+        val =((PyInt*)current->getHead()->callMethod("__hash__",args))->getVal();
+        total = (total+(val % (INT_MAX/2)))%(INT_MAX/2);
+        current = current->getTail();
+    }
+    return new PyInt(total);
 }
 
 PyObject* PyFunList::__getitem__(vector<PyObject*>* args) {

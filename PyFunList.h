@@ -51,6 +51,7 @@ protected:
     virtual PyObject* head(vector<PyObject*>* args);
     virtual PyObject* tail(vector<PyObject*>* args);
     virtual PyObject* concat(vector<PyObject*>* args);
+    virtual PyObject* __hash__(vector<PyObject*>* args);
 };
 
 class PyFunListElm {
